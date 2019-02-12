@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 100%;
+  height: 150px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2><b>Contact</b></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h4>Nikhil Lohakare</h4></li>
+      <li>connectnikhil2020@gmail.com</li>
+      
+    </ul>
+  </nav>
+  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+  <h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+      
+    <label for="fname"><b></b>First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="State">State</label>
+    <select id="country" name="country">
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>Andra Pradesh
+      <option value="Gujarat">Gujarat</option>
+      <option value="Rajasthan">Rajasthan</option> 
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Karnataka">Karnataka</option> 
+      <option value="Himachal Pradesh">Himachal Pradesh</option>
+      <option value="Jharkhand">Jharkhand</option> 
+      <option value="Goa">Goa</option>
+      <option value="Bihar">Bihar</option> 
+      <option value="Chhattisgarh">Chhattisgarh</option>
+      <option value="Jammu and Kashmir">Jammu and Kashmir</option> 
+      <option value="Haryana">Haryana</option>
+      <option value="Assam">Assam</option> 
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Kerala">Kerala</option> 
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Sikkim">Sikkim</option>       
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+    <a href="search.php">Homepage</a>
+  </form>
+</div>
+ 
+<footer>
+  <p>Thank for contacting us we will shortly back to you soon</p>
+</footer>
+
+</body>
+</html>
+
